@@ -5,51 +5,49 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
+<body class="portfolio-page">
+    <header class="site-header">
+        <h1 class="site-title">Welcome to My Portfolio</h1>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+                <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>Hi, I am a beginner web developer. This is my portfolio page!</p>
+    <main class="page-content">
+        <section id="home" class="content-section home-section">
+            <h2 class="section-title">Home</h2>
+            <p class="section-text">Hi, I am a beginner web developer. This is my portfolio page!</p>
         </section>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am learning HTML and CSS. I enjoy building simple websites.</p>
+        <section id="about" class="content-section about-section">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-text">I am learning HTML and CSS. I enjoy building simple websites.</p>
             
-            <h3>My Favorite Song</h3>
-            <audio controls>
+            <h3 class="subheading">My Favorite Song</h3>
+            <audio class="music-player" controls>
                 <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
-
-
         </section>
 
-        <section id="work">
-            <h2>My Work</h2>
-            <ul>
-                <li><strong>Project 1:</strong> A simple calculator</li>
-                <li><strong>Project 2:</strong> A todo list</li>
-                <li><strong>Project 3:</strong> A personal blog</li>
+        <section id="work" class="content-section work-section">
+            <h2 class="section-title">My Work</h2>
+            <ul class="project-list">
+                <li class="project-item"><strong>Project 1:</strong> A simple calculator</li>
+                <li class="project-item"><strong>Project 2:</strong> A todo list</li>
+                <li class="project-item"><strong>Project 3:</strong> A personal blog</li>
             </ul>
         </section>
 
-        <section id="resume">
-            <h2>Resume</h2>
-            <table>
+        <section id="resume" class="content-section resume-section">
+            <h2 class="section-title">Resume</h2>
+            <table class="resume-table">
                 <thead>
                     <tr>
                         <th>Job Title</th>
@@ -72,31 +70,31 @@
             </table>
         </section>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form action="#" method="POST">
+        <section id="contact" class="content-section contact-section">
+            <h2 class="section-title">Contact Me</h2>
+            <form class="contact-form" action="#" method="POST">
                 <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name">
+                    <label class="form-label" for="name">Name:</label>
+                    <input class="form-input" type="text" id="name" name="name">
                 </div>
                 
                 <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email">
+                    <label class="form-label" for="email">Email:</label>
+                    <input class="form-input" type="email" id="email" name="email">
                 </div>
                 
                 <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4"></textarea>
+                    <label class="form-label" for="message">Message:</label>
+                    <textarea class="form-textarea" id="message" name="message" rows="4"></textarea>
                 </div>
                 
-                <input type="submit" value="Submit">
+                <input class="submit-button" type="submit" value="Submit">
             </form>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+    <footer class="site-footer">
+        <p class="footer-text">&copy; 2026 My Portfolio. All rights reserved.</p>
     </footer>
 </body>
 </html>
